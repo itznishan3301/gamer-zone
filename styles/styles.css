@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
     margin-left: 9em;
 }
 
-.logo-container img{
+.logo-container img {
     width: 80px;
     object-fit: cover;
     padding-right: 1em;
@@ -47,7 +47,16 @@ body {
 
 }
 
-.nav-items a{
+.nav-items ul {
+    display: flex;
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-items a {
     text-decoration: none;
     color: black;
     padding: 15px;
@@ -62,4 +71,144 @@ body {
     border: none;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.1);
+}
+
+.banner-container {
+    background-image: url(./images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.banner-content img {
+    width: 500px;
+}
+
+.banner-title h1 {
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 800;
+    background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-title h3 {
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.banner-title p {
+    color: #534c64;
+    padding: 5px 0;
+}
+.btn-banner{
+    padding-top: 30px;
+}
+
+.btn-banner a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-sign {
+    background: #ff42a5;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+}
+.btn-playon {
+    background: #4ec5f7;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+/*Responsive for Mobile devices*/
+
+@media screen and (max-width: 425px) {
+
+    * {
+        /* box-shadow: none;
+        box-sizing: unset; */
+    }
+
+    .nav-container {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .logo-container {
+        justify-content: center;
+        padding-right: 100px;
+    }
+
+    /* .logo-container img{
+        width: 80px;
+    } */
+
+    .logo-container p {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+
+/* Responsive for Tablet devices*/
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+
+    * {
+        box-shadow: none;
+        box-sizing: unset;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+
+    }
+
+    .logo-container {
+        text-align: center;
+        align-items: center;
+        margin-right: 70px;
+        padding-bottom: 50px;
+    }
+
+    .nav-items ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
 }
