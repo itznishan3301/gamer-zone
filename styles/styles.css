@@ -137,6 +137,35 @@ body {
     border-radius: 20px;
 }
 
+.videos-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 200px;
+  }
+  
+  .box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 300;
+    padding-bottom: 50px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
 
 
 
@@ -147,26 +176,18 @@ body {
 /*Responsive for Mobile devices*/
 
 @media screen and (max-width: 425px) {
-
-    * {
-        /* box-shadow: none;
-        box-sizing: unset; */
-    }
-
     .nav-container {
         flex-direction: column;
         margin-top: 10px;
         gap: 10px;
+        box-shadow: none;
+        align-items: center;
     }
 
     .logo-container {
         justify-content: center;
         padding-right: 100px;
     }
-
-    /* .logo-container img{
-        width: 80px;
-    } */
 
     .logo-container p {
         font-size: 35px;
@@ -175,7 +196,28 @@ body {
         justify-content: center;
     }
 
+    .banner-content{
+        flex-direction: column-reverse;
+        gap: 80px;
+    }
+    .banner-container {
+        background-position: center bottom;
+        background-size: 400px 280px;
+    }
+
+    .videos-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
+
+
+
+  
+
+  
+  
 
 
 
@@ -186,16 +228,12 @@ body {
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
 
-    * {
-        box-shadow: none;
-        box-sizing: unset;
-    }
 
     .nav-container {
         flex-direction: column;
         margin-top: 10px;
         gap: 10px;
-
+        box-shadow: none;
     }
 
     .logo-container {
@@ -211,4 +249,21 @@ body {
         gap: 30px;
     }
 
+    .banner-content{
+        flex-direction: column-reverse;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-container {
+        background-position: center bottom;
+        background-size: 400px 280px;
+    }
+
+    .videos-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }
